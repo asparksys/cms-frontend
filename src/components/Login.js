@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { Box, Grid, Typography, TextField, FormControl, Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import logo from '/public/images/rotract.png'
+import rtr_logo from '/public/images/rotract.png'
+import leo_logo from '/public/images/leo.png'
+import aama from '/public/images/aama.png'
 
 const useStyles = makeStyles({
   leo: {
@@ -23,11 +25,13 @@ const Login = () => {
 
   return (
     <>
-      <img src={logo} />
+      <img src={leo_logo} height='100px'/>
+      <img src={rtr_logo} height='100px'/>
+
       <Grid container spacing={3}>
         <Grid item xs={5}>
           <Typography variant="h2" component="h2">
-            <Box fontWeight="fontWeightBold" mt={20}>
+            <Box fontWeight="fontWeightBold" mt={7}>
               Login.
             </Box>
           </Typography>
@@ -84,7 +88,7 @@ const Login = () => {
 
         <Grid item xs={7}>
           <Typography variant="h5" component="h5" color="textSecondary" align="center">
-            <Box mt={20}>Nice to see you again</Box>
+            <Box mt={7}>Nice to see you again</Box>
           </Typography>
 
           <Typography variant="h2" component="h2" align="center">
@@ -92,9 +96,12 @@ const Login = () => {
               Welcome Back!
             </Box>
           </Typography>
+            <center>
+                      <img src={aama} height='500px'/>
 
+            </center>
           <Typography variant="overline" component="h2" align="center">
-            <Box mt={50}>
+            <Box mt={1}>
               Powered by: <span>Aspark System</span>
             </Box>
           </Typography>
