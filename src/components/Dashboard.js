@@ -1,14 +1,13 @@
-import React from 'react';
+import React from 'react'
 
+const DashboardView = () => {
+  console.log('dashboard')
 
-const DashboardView = () =>{
-    console.log('dashboard')
-
-    return(
+  return (
     <>
-    <h1>Dashboard page</h1> 
+      <h1>Dashboard page</h1>
     </>
-    )
+  )
 }
 
-export default DashboardView;
+export default DashboardView
