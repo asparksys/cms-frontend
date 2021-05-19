@@ -25,8 +25,11 @@ const Login = () => {
 
   return (
     <>
-      <img src={rtr_logo} height='100px'/>
+    <Box mt={5}>
+    <img src={rtr_logo} height='100px'/>
       <img src={leo_logo} height='100px'/>
+    </Box>
+    
 
       <Grid container spacing={3}>
         <Grid item xs={4}>
