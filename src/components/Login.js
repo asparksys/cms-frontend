@@ -25,11 +25,11 @@ const Login = () => {
 
   return (
     <>
-      <img src={leo_logo} height='100px'/>
       <img src={rtr_logo} height='100px'/>
+      <img src={leo_logo} height='100px'/>
 
       <Grid container spacing={3}>
-        <Grid item xs={5}>
+        <Grid item xs={4}>
           <Typography variant="h2" component="h2">
             <Box fontWeight="fontWeightBold" mt={7}>
               Login.
@@ -39,7 +39,7 @@ const Login = () => {
             Login with your credentials
           </Typography>
           <form>
-            <Box mt={5}>
+            <Box mt={7}>
               <Box mt={3}>
                 <TextField
                   id="standard"
@@ -86,7 +86,7 @@ const Login = () => {
           </Typography>
         </Grid>
 
-        <Grid item xs={7}>
+        <Grid item xs={8}>
           <Typography variant="h5" component="h5" color="textSecondary" align="center">
             <Box mt={7}>Nice to see you again</Box>
           </Typography>
