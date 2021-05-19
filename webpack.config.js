@@ -22,7 +22,7 @@ module.exports = {
         // ignore transpiling JavaScript from node_modules as it should be that state
         exclude: /node_modules/,
         // use the babel-loader for transpiling JavaScript to a suitable format
-        loader: 'babel-loader',
+        loader: ['babel-loader','file-loader'],
         options: {
           // attach the presets to the loader (most projects use .babelrc file instead)
           presets: ['@babel/preset-env', '@babel/preset-react'],
@@ -30,8 +30,9 @@ module.exports = {
       },
     ],
   },
-  devServer: {
+   devServer: {
     historyApiFallback: true,
+    contentBase : path.join(__dirname,'public'),
   },
   // add a custom index.html as the template
   plugins: [
