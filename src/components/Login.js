@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, Grid, Typography, TextField, FormControl, Button } from '@material-ui/core'
+import { Box, Grid, Typography, TextField, Button, Container } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import rtr_logo from '/public/images/rotract.png'
 import leo_logo from '/public/images/leo.png'
@@ -24,7 +24,7 @@ const Login = () => {
   // const [loginStatus, setLoginStatus] = useState(flase);
 
   return (
-    <>
+    <Container>
     <Box mt={5}>
     <img src={rtr_logo} height='100px'/>
       <img src={leo_logo} height='100px'/>
@@ -90,18 +90,17 @@ const Login = () => {
         </Grid>
 
         <Grid item xs={8}>
-          <Typography variant="h5" component="h5" color="textSecondary" align="center">
-            <Box mt={7}>Nice to see you again</Box>
-          </Typography>
-
-          <Typography variant="h2" component="h2" align="center">
-            <Box fontWeight="fontWeightBold" mt={1}>
+        <Typography variant="h2" component="h2" align="center">
+            <Box fontWeight="fontWeightBold" mt={7}>
               Welcome Back!
             </Box>
           </Typography>
+          <Typography variant="h5" component="h5" color="textSecondary" align="center">
+             Nice to see you again
+          </Typography>
+          
             <center>
-                      <img src={aama} height='500px'/>
-
+              <img src={aama} height='500px'/>
             </center>
           <Typography variant="overline" component="h2" align="center">
             <Box mt={1}>
@@ -110,7 +109,7 @@ const Login = () => {
           </Typography>
         </Grid>
       </Grid>
-    </>
+    </Container>
   )
 }
 

@@ -2,14 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import DashboardView from './components/Dashboard';
 import Login from './components/Login';
-import { Container } from '@material-ui/core'; 
 
 const App = () => {
     console.log('one')
 
     return(
-    <React.StrictMode>
-        <Container>
+    // <React.StrictMode>
 
     <Router>
         <Switch>
@@ -17,9 +15,8 @@ const App = () => {
         <Route path='/dashboard' component={DashboardView} />
         </Switch>
     </Router>
-    </Container>
 
-    </React.StrictMode>
+    // </React.StrictMode>
     )
 }
     
