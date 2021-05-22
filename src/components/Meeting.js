@@ -16,24 +16,36 @@ const meetingStyle = makeStyles({
   })
 
 
-const Meeting = () => {
+const Meeting = (props) => {
     const classes = meetingStyle()
 
     return(
                 <Grid item xs={4}>
-                <InsertComment  className={classes.icon} />
-                    <Typography 
-                        variant='subtitle1'>
-                    12 May, 2021
+                <Grid container>
+                    <Grid item xs={2}>
+                    <InsertComment  className={classes.icon} />
+
+                    </Grid>
+                    <Grid item xs={10}>
+                        <Box pt={2}>
+                        <Typography 
+                        variant='h6'
+                        component='h6'>
+                    {props.date}
 
                     </Typography>
                     
                     <Typography
-                        varinat='h2'
-                        component='h2'
+                        variant='h4'
+                        component='h4'
                     >
-                        Meeting Log 1
+                        {props.title}
                     </Typography>
+                        </Box>
+                  
+                    </Grid>
+                </Grid>
+                   
                 </Grid>
           
            

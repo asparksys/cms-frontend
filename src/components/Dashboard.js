@@ -48,12 +48,13 @@ const DashboardView = () => {
         </Grid>
 
         <Grid item xs={11}>
-          <Box mt={5}>
 
           <Grid container>
             <Grid item xs={8}>
               <Box 
                 align='right' 
+                pt={5}
+                pr={2}
               >
                 <Button 
                   name="add"
@@ -129,8 +130,8 @@ const DashboardView = () => {
                   </Box>
                   </Typography>
                   <Grid container>
-                  <Meeting/>
-                  <Meeting/>
+                  <Meeting title='Meeting 1' date='May 10, 2021'/>
+                  <Meeting title='Meeting 2' date='May 12, 2021'/>
                   </Grid>
                  
 
@@ -142,7 +143,6 @@ const DashboardView = () => {
             </Grid>
 
           </Grid>
-          </Box>
 
         </Grid>
 
