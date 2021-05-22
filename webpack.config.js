@@ -11,8 +11,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     // the filename of the JS bundle will be bundle.js
     filename: 'bundle.js',
-    publicPath: '/'
-
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -28,10 +27,22 @@ module.exports = {
           presets: ['@babel/preset-env', '@babel/preset-react'],
         },
       },
+      {
+        test: /\.(jpe?g|gif|png|svg)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+            },
+          },
+        ],
+      },
     ],
   },
   devServer: {
     historyApiFallback: true,
+    contentBase: path.join(__dirname, 'public'),
   },
   // add a custom index.html as the template
   plugins: [
