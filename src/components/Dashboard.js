@@ -3,8 +3,13 @@ import { Typography, Box, Grid, Button, Paper, Avatar } from '@material-ui/core'
 import Navigation from './Navigation';
 import { makeStyles } from '@material-ui/core/styles';
 import rtr_logo from '/public/images/rotract.png'
+import { People, Message } from '@material-ui/icons';
+import Meeting from './Meeting';
+import IconDescription from './IconDesciption';
+import Club from './Club';
 
-const dashboardStyle = makeStyles({
+
+const dashboardStyle = makeStyles((theme) => ({
   mainBackground:{
     background: 'rgba(242, 151, 39, 0.2)',
     },
@@ -14,8 +19,24 @@ const dashboardStyle = makeStyles({
   avatar:{
     height:100,
     width:100
-  }
-})
+  },
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    '& > *': {
+      margin: theme.spacing(1),
+      width: theme.spacing(25),
+      height: theme.spacing(30),
+    },
+  },
+  icon:{
+    fontSize: 60,
+    paddingTop: 20,
+    paddingBottom: 20,
+},
+}));
+
+
 const DashboardView = () => {
   const classes = dashboardStyle()
 
@@ -73,11 +94,51 @@ const DashboardView = () => {
 
                   </Paper>
                 </Typography>
+
+                <Typography
+                   variant="h2" 
+                   component="h2"
+                 >
+                   <Box 
+                      mt={5}
+                      fontWeight="fontWeightBold"
+                  >
+                   Club
+
+                  </Box>
+                  </Typography>
+                  
+                  <div className={classes.root}>
+
+                  <IconDescription name='Meeting' value='21' icon={<Message className={classes.icon}/>}/>      
+                  <IconDescription name='Members' value='22' icon={<People className={classes.icon}/>} />      
+
+                  </div>
+
+
+                  <Typography
+                   variant="h2" 
+                   component="h2"
+                 >
+                   <Box 
+                      mt={3}
+                      fontWeight="fontWeightBold"
+                  >
+                   Minutes 
+
+                  </Box>
+                  </Typography>
+                  <Grid container>
+                  <Meeting/>
+                  <Meeting/>
+                  </Grid>
+                 
+
             </Grid>
 
             <Grid item xs={4}>
 
-
+            <Club />
             </Grid>
 
           </Grid>
