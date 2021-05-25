@@ -1,12 +1,12 @@
 import React from 'react'
 import { Typography, Box, Grid, Button, Paper, Avatar } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { InsertComment } from '@material-ui/icons';
+import { InsertComment, InsertDriveFile } from '@material-ui/icons';
 
 
 const meetingStyle = makeStyles({
     icon:{
-        fontSize: 60,
+        fontSize: 65,
         paddingTop: 20,
         paddingBottom: 20,
     },
@@ -23,14 +23,16 @@ const Meeting = (props) => {
                 <Grid item xs={4}>
                 <Grid container>
                     <Grid item xs={2}>
-                    <InsertComment  className={classes.icon} />
+                    <InsertDriveFile  className={classes.icon} />
 
                     </Grid>
                     <Grid item xs={10}>
-                        <Box pt={2}>
+                        <Box 
+                          pt={3}
+                          px={1} >
                         <Typography 
-                        variant='h6'
-                        component='h6'>
+                        variant='subtitle2'
+                        component='subtitle2'>
                     {props.date}
 
                     </Typography>

@@ -1,13 +1,13 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import DashboardView from './components/Dashboard';
-import Login from './components/Login';
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import DashboardView from './components/Dashboard'
+import Login from './components/Login'
 
 const App = () => {
-    console.log('one')
+  console.log('one')
 
-    return(
-    // <React.StrictMode>
+  return (
+    <React.StrictMode>
 
     <Router>
         <Switch>
@@ -16,13 +16,8 @@ const App = () => {
         </Switch>
     </Router>
 
-    // </React.StrictMode>
-    )
+    </React.StrictMode>
+  )
 }
-    
-  
 
-export default App;
-
-
-
+export default App

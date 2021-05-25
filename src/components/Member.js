@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Grid, Typography, Avatar } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import rtr_logo from '/public/images/rotract.png'
+import rtrLogo from '/public/images/rotract.png'
 
 const clubCss = makeStyles((theme) => ({
     avatar:{
@@ -18,11 +18,14 @@ const Member = (props) => {
 
         <Grid container>
             <Grid item xs={2}>
-                <Avatar alt="Remy Sharp" src={rtr_logo} className={classes.avatar}/>
+                <Avatar alt="Remy Sharp" src={rtrLogo} className={classes.avatar}/>
             </Grid>
             <Grid item xs={10}>
                 <Typography variant='h6' component='h6'> 
                      <Box
+                      pl={2}
+                      pt={1}
+
                      >
                        {props.name}
                     </Box>
@@ -31,7 +34,8 @@ const Member = (props) => {
                 <Typography variant='h5' component='h5'>
                     <Box
                     fontWeight="fontWeightBold"
-                    pt={1}
+                    // pt={1}
+                    pl={2}  
                     >
                     {props.position}
                     </Box>
