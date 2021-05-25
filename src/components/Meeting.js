@@ -20,7 +20,7 @@ const Meeting = (props) => {
     const classes = meetingStyle()
 
     return(
-                <Grid item xs={4}>
+            <Grid item xs={4}>
                 <Grid container>
                     <Grid item xs={2}>
                     <InsertDriveFile  className={classes.icon} />
