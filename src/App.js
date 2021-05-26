@@ -1,26 +1,25 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import DashboardView from './components/Dashboard';
-import Login from './components/Login';
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import DashboardView from './components/Dashboard'
+import Login from './components/Login'
+import MeetingLog from './components/Meeting/Log'
 
 const App = () => {
-    console.log('one')
+	console.log('one')
 
-    return(
-    // <React.StrictMode>
+	return (
+		// <React.StrictMode>
 
-    <Router>
-        <Switch>
-        <Route path='/' exact component={Login} />
-        <Route path='/dashboard' component={DashboardView} />
-        </Switch>
-    </Router>
+		<Router>
+			<Switch>
+				<Route path="/" exact component={Login} />
+				<Route path="/dashboard" component={DashboardView} />
+				<Route path="/meeting-log" component={MeetingLog} />
+			</Switch>
+		</Router>
 
-    // </React.StrictMode>
-    )
+		// </React.StrictMode>
+	)
 }
-    
-  
 
-export default App;
-
+export default App

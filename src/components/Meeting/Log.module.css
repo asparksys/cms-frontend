@@ -1,0 +1,11 @@
+.container {
+	min-height: calc(100vh-50px);
+	padding: 70px;
+}
+@media screen and (max-width: 350px) {
+	.header {
+		flex-direction: column !important;
+		align-items: flex-start !important;
+		margin-bottom: 10px;
+	}
+}
