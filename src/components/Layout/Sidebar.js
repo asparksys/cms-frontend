@@ -32,10 +32,10 @@ const Sidebar = () => {
 	return (
 		<Drawer classes={{ paper: classes.drawer }} variant="permanent">
 			<List>
-				<ListItem button key={1}>
+				<ListItem button key={2}>
 					<HomeRoundedIcon className={classes.links} />
 				</ListItem>
-				<ListItem button key={2}>
+				<ListItem button key={1}>
 					<MessageRoundedIcon className={classes.links} />
 				</ListItem>
 				<ListItem button key={3}>

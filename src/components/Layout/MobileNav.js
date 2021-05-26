@@ -12,12 +12,15 @@ const useStyles = makeStyles({
 		display: 'flex',
 		justifyContent: 'space-between',
 		margin: '0 auto',
+		position: 'fixed',
+		bottom: '0',
+		width: '100%',
 	},
 })
 
 const MobileNav = () => {
 	const classes = useStyles()
-	const [value, setValue] = React.useState(0)
+	const [value, setValue] = React.useState(1)
 	return (
 		<BottomNavigation
 			value={value}
