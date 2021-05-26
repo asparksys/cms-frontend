@@ -16,6 +16,16 @@ const minputeNavStyle = makeStyles((theme) => ({
     fontSize:30,
     border: 5,
   },
+  grid:{
+    fontSize:30,
+    border: 5,
+    boxShadow: '-5px 0 0 0 rgba(0, 0, 0, 0.1), -5px 0 0 0 rgba(0, 0, 0, 0.1)'
+},
+grid2:{
+    fontSize:30,
+    border: 5,
+    boxShadow: '-7px 0 0 0 rgba(0, 0, 0, 0.1), -7px 0 0 0 rgba(0, 0, 0, 0.1)'
+    }
   }));
 
 const MinuteNav = () => {
@@ -26,47 +36,15 @@ const MinuteNav = () => {
             <Grid container>
 
                 <Grid item xs={3} className={classes.division}>
-                    <Typography variant='h5' component='h5'>
-                        <Box fontWeight='bold' className={classes.header} >
-                        Meeting Minute
-                        </Box>
-                    </Typography>
-                    <Typography>
-                        <Box>
-                        Monday May 17, 2021 
-                        </Box>
-                    </Typography>
-                </Grid>
-                <Grid item xs={3} className={classes.division}>
-                    <Grid container>
-                        <Grid item xs={2}>
-                         <SupervisedUserCircle className={classes.icon} />
-
-                        </Grid>
-                        <Grid item xs={10}>
-                        <Typography variant='h5' component='h5'>
-                        <Box fontWeight='bold' pt={1} className={classes.header}>
-                            Members
-                            </Box>
-                        </Typography>
-                        </Grid>
-                    </Grid>
                    
                 </Grid>
-                <Grid item xs={6} className={classes.division}>
-                    <Grid container>
-                        <Grid item xs={1}>
-                         <SpeakerNotes className={classes.icon} />
 
-                        </Grid>
-                        <Grid item xs={11} >
-                        <Typography variant='h5' component='h5'>
-                        <Box fontWeight='bold' pt={1} className={classes.header}>
-                            Discussion
-                            </Box>
-                        </Typography>
-                        </Grid>
-                    </Grid>
+                <Grid item xs={3} className={classes.grid}>
+                    
+                   
+                </Grid>
+                <Grid item xs={6} className={classes.grid2}>
+                   
                 </Grid>
 
             </Grid>
