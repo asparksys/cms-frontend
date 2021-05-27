@@ -11,7 +11,6 @@ const useStyles = makeStyles({
 	root: {
 		display: 'flex',
 		justifyContent: 'space-between',
-		margin: '0 auto',
 		position: 'fixed',
 		bottom: '0',
 		width: '100%',
