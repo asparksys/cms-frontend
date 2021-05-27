@@ -1,0 +1,12 @@
+.text {
+	font-size: 25vw;
+	font-weight: bolder;
+	display: block;
+}
+.sub {
+	text-transform: uppercase;
+	letter-spacing: 1vw;
+	display: block;
+	margin-bottom: 10vh;
+	margin-top: -5vh;
+}
