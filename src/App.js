@@ -1,10 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
-import DashboardView from './components/Dashboard'
-import Login from './components/Login'
+import DashboardView from './components/Dashboard/Dashboard'
+import Login from './components/Login/Login'
 import MeetingLog from './components/Meeting/Log'
 import PageNotFound from './components/404'
-import Minute from './components/Minute'
+import Minute from './components/MeetingDetails/Minute'
+import PrimaryRoute from './routes/Primary'
 
 const App = () => {
 	console.log('one')
@@ -15,11 +16,13 @@ const App = () => {
 		<Router>
 			<Switch>
 				<Route path="/" exact component={Login} />
-				<Route path="/dashboard" component={DashboardView} />
-				<Route path="/meeting-log" component={MeetingLog} />
 				<Route path="/minute" component={Minute} />
 				<Route path="/page-not-found" component={PageNotFound} />
+
+				<PrimaryRoute path="/dashboard" component={DashboardView} />
+				<PrimaryRoute path="/meeting-log" component={MeetingLog} />
 				<Redirect to="/page-not-found" />
+
 			</Switch>
 		</Router>
 

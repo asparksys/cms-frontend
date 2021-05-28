@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
-import { Grid, IconButton } from '@material-ui/core'
+import { Grid, IconButton, Box } from '@material-ui/core'
 import { Home, ExitToApp, Message } from '@material-ui/icons'
 
 const dashboardStyle = makeStyles({
@@ -35,6 +35,10 @@ const Navigation = () => {
 
 	return (
 		<div>
+			<Box
+				display={{ xs: 'none', sm: 'none', md: 'block' }}
+				>
+
 			<Grid container>
 				<Grid item xs={4} lg={4} className={classes.sidebar} style={{ height: '100vh' }}>
 					<center>
@@ -52,6 +56,7 @@ const Navigation = () => {
 					</center>
 				</Grid>
 			</Grid>
+			</Box>
 		</div>
 	)
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Box, Avatar, Grid } from '@material-ui/core'
-import rtrLogo from '/public/images/rotract.png'
+import rtrLogo from '../assets/images/rotract.png'
 import Member from './Member'
 
 const clubCss = makeStyles((theme) => ({

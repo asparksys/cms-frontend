@@ -31,25 +31,12 @@ module.exports = {
 				test: /\.css$/,
 				use: [
 					'style-loader',
-					{
-						loader: 'css-loader',
-						options: {
-							importLoaders: 1,
-							modules: true,
-						},
-					},
+					'css-loader'
 				],
 			},
 			{
 				test: /\.(jpe?g|gif|png|svg)$/i,
-				use: [
-					{
-						loader: 'url-loader',
-						options: {
-							limit: 10000,
-						},
-					},
-				],
+				type: 'asset/resource',
 			},
 		],
 	},

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Box, Grid, Typography, TextField, Button, Container } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import rtrLogo from '/public/images/rotract.png'
-import leoLogo from '/public/images/leo.png'
-import aama from '/public/images/aama.png'
+import rtrLogo from '../assets/images/rotract.png'
+import leoLogo from '../assets/images/leo.png'
+import aama from '../assets/images/aama.png'
 
 const useStyles = makeStyles({
 	leo: {
@@ -99,7 +99,7 @@ const Login = () => {
 					</Typography>
 
 					<center>
-						<img src={aama} height="500px" />
+						<img src={aama} height="400px" />
 					</center>
 					<Typography variant="overline" component="h2" align="center">
 						<Box mt={1}>

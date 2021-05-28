@@ -4,9 +4,9 @@ import { Avatar, Grid, Typography, Box } from '@material-ui/core'
 
 import { makeStyles } from '@material-ui/core/styles'
 
-import NumberTitle from './NumberTitle'
+import NumberTitle from '../Dashboard/NumberTitle'
 
-import rtrLogo from '/public/images/rotract.png'
+import rtrLogo from '../assets/images/rotract.png'
 
 const useStyles = makeStyles({
 	main: {

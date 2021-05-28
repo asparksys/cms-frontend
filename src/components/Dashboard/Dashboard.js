@@ -2,12 +2,13 @@ import React from 'react'
 import { Typography, Box, Grid, Button, Paper, Avatar } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import { People, Message } from '@material-ui/icons'
-import Navigation from './Navigation'
-import Meeting from './Meeting'
+import Navigation from '../Layout/Navigation'
+import Meeting from '../Meeting/Meeting'
 import IconDescription from './IconDesciption'
-import Club from './Club'
+import Club from '../Club/Club'
 
-import rtrLogo from '/public/images/rotract.png'
+import rtrLogo from '../assets/images/rotract.png'
+import Nav from '../Layout/Nav'
 
 const dashboardStyle = makeStyles((theme) => ({
 	mainBackground: {
@@ -56,9 +57,10 @@ const DashboardView = () => {
 
 	return (
 		<div>
+			<Nav />
+
 			<Grid container className={classes.mainBackground}>
-				<Grid item md={1} sm={0}>
-					<Navigation />
+				<Grid item md={1} sm={1}>
 				</Grid>
 
 				<Grid item md={11} sm={12}>
