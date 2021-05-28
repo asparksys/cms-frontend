@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Box, Grid, Typography, TextField, Button, Container } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import rtr_logo from '/public/images/rotract.png'
-import leo_logo from '/public/images/leo.png'
-import aama from '/public/images/aama.png'
+import rtrLogo from '../assets/images/rotract.png'
+import leoLogo from '../assets/images/leo.png'
+import aama from '../assets/images/aama.png'
 
 const useStyles = makeStyles({
 	leo: {
@@ -26,8 +26,8 @@ const Login = () => {
 	return (
 		<Container>
 			<Box mt={5}>
-				<img src={rtr_logo} height="100px" />
-				<img src={leo_logo} height="100px" />
+				<img src={rtrLogo} height="100px" alt="Rotract logo" />
+				<img src={leoLogo} height="100px" alt="Leo logo" />
 			</Box>
 
 			<Grid container spacing={3}>
@@ -99,7 +99,7 @@ const Login = () => {
 					</Typography>
 
 					<center>
-						<img src={aama} height="500px" />
+						<img src={aama} height="400px" alt="Aspark Systems" />
 					</center>
 					<Typography variant="overline" component="h2" align="center">
 						<Box mt={1}>
