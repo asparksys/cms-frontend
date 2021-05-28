@@ -35,27 +35,24 @@ const Navigation = () => {
 
 	return (
 		<div>
-			<Box
-				display={{ xs: 'none', sm: 'none', md: 'block' }}
-				>
+			<Box display={{ xs: 'none', sm: 'none', md: 'block' }}>
+				<Grid container>
+					<Grid item xs={4} lg={4} className={classes.sidebar} style={{ height: '100vh' }}>
+						<center>
+							<IconButton aria-label="home" color="inherit" className={classes.iconButton}>
+								<Home className={classes.icon} />
+							</IconButton>
 
-			<Grid container>
-				<Grid item xs={4} lg={4} className={classes.sidebar} style={{ height: '100vh' }}>
-					<center>
-						<IconButton aria-label="home" color="inherit" className={classes.iconButton}>
-							<Home className={classes.icon} />
-						</IconButton>
+							<IconButton aria-label="minutes" color="inherit" className={classes.iconButton}>
+								<Message className={classes.icon} />
+							</IconButton>
 
-						<IconButton aria-label="minutes" color="inherit" className={classes.iconButton}>
-							<Message className={classes.icon} />
-						</IconButton>
-
-						<IconButton aria-label="logout" color="inherit" className={classes.iconButton}>
-							<ExitToApp className={classes.icon} />
-						</IconButton>
-					</center>
+							<IconButton aria-label="logout" color="inherit" className={classes.iconButton}>
+								<ExitToApp className={classes.icon} />
+							</IconButton>
+						</center>
+					</Grid>
 				</Grid>
-			</Grid>
 			</Box>
 		</div>
 	)

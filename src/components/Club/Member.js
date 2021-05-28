@@ -3,7 +3,7 @@ import { Box, Grid, Typography, Avatar } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import rtrLogo from '../assets/images/rotract.png'
 
-const clubCss = makeStyles((theme) => ({
+const clubCss = makeStyles(() => ({
 	avatar: {
 		height: 60,
 		width: 60,

@@ -29,10 +29,7 @@ module.exports = {
 			},
 			{
 				test: /\.css$/,
-				use: [
-					'style-loader',
-					'css-loader'
-				],
+				use: ['style-loader', 'css-loader'],
 			},
 			{
 				test: /\.(jpe?g|gif|png|svg)$/i,

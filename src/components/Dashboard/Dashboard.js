@@ -2,7 +2,6 @@ import React from 'react'
 import { Typography, Box, Grid, Button, Paper, Avatar } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import { People, Message } from '@material-ui/icons'
-import Navigation from '../Layout/Navigation'
 import Meeting from '../Meeting/Meeting'
 import IconDescription from './IconDesciption'
 import Club from '../Club/Club'
@@ -60,8 +59,7 @@ const DashboardView = () => {
 			<Nav />
 
 			<Grid container className={classes.mainBackground}>
-				<Grid item md={1} sm={1}>
-				</Grid>
+				<Grid item md={1} sm={1} />
 
 				<Grid item md={11} sm={12}>
 					<Grid container>

@@ -26,8 +26,8 @@ const Login = () => {
 	return (
 		<Container>
 			<Box mt={5}>
-				<img src={rtrLogo} height="100px" />
-				<img src={leoLogo} height="100px" />
+				<img src={rtrLogo} height="100px" alt="Rotract logo" />
+				<img src={leoLogo} height="100px" alt="Leo logo" />
 			</Box>
 
 			<Grid container spacing={3}>
@@ -99,7 +99,7 @@ const Login = () => {
 					</Typography>
 
 					<center>
-						<img src={aama} height="400px" />
+						<img src={aama} height="400px" alt="Aspark Systems" />
 					</center>
 					<Typography variant="overline" component="h2" align="center">
 						<Box mt={1}>

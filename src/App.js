@@ -7,27 +7,18 @@ import PageNotFound from './components/404'
 import Minute from './components/MeetingDetails/Minute'
 import PrimaryRoute from './routes/Primary'
 
-const App = () => {
-	console.log('one')
+const App = () => (
+	<Router>
+		<Switch>
+			<Route path="/" exact component={Login} />
+			<Route path="/minute" component={Minute} />
+			<Route path="/page-not-found" component={PageNotFound} />
 
-	return (
-		// <React.StrictMode>
-
-		<Router>
-			<Switch>
-				<Route path="/" exact component={Login} />
-				<Route path="/minute" component={Minute} />
-				<Route path="/page-not-found" component={PageNotFound} />
-
-				<PrimaryRoute path="/dashboard" component={DashboardView} />
-				<PrimaryRoute path="/meeting-log" component={MeetingLog} />
-				<Redirect to="/page-not-found" />
-
-			</Switch>
-		</Router>
-
-		// </React.StrictMode>
-	)
-}
+			<PrimaryRoute path="/dashboard" component={DashboardView} />
+			<PrimaryRoute path="/minutes" exact component={MeetingLog} />
+			<Redirect to="/page-not-found" />
+		</Switch>
+	</Router>
+)
 
 export default App
