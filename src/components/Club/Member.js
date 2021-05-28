@@ -27,7 +27,6 @@ const Member = (props) => {
 					<Typography variant="h5" component="h5">
 						<Box
 							fontWeight="fontWeightBold"
-							// pt={1}
 							pl={2}
 						>
 							{props.position}

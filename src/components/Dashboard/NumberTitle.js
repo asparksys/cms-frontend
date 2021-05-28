@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles'
 const numTitle = makeStyles({
 	box: {
 		boxShadow: '0 -5px 0 0 rgba(191, 109, 36, 1), 0 0 0 0 rgba(0, 0, 0, 0.1)',
-		width: '80px',
+		width: '80em',
 	},
 })
 
