@@ -1,13 +1,14 @@
 .container {
 	min-height: calc(100vh-50px);
 	padding: 70px;
+	width: auto !important;
 }
 @media screen and (max-width: 960px) {
 	.container {
 		padding-top: 10px;
 	}
 }
-@media (max-width: 1068px) and (min-width: 960px) {
+@media (max-width: 1415px) and (min-width: 960px) {
 	.container {
 		margin-left: 60px !important;
 	}

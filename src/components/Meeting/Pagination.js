@@ -6,7 +6,7 @@ import Pagination from '@material-ui/lab/Pagination'
 const useStyles = makeStyles((theme) => ({
 	root: {
 		'& > *': {
-			marginTop: theme.spacing(4),
+			margin: '20px 0px',
 		},
 	},
 	tab: {

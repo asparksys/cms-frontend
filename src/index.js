@@ -1,5 +1,3 @@
-// eslint-disable-next-line react/prefer-stateless-function
-
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { ThemeProvider } from '@material-ui/styles'

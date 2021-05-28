@@ -3,3 +3,5 @@ node_modules/
 _/
 dist/
 .netlify
+package-lock.json
+.eslintcache

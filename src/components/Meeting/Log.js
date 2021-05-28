@@ -42,6 +42,20 @@ const fakedata = [
 		body: 'Lorem ipsum doler it ola ola',
 		date: 'March 9, 2021',
 	},
+	{
+		id: 5,
+		title: 'Meeting 1',
+		agenda: 'Agenda',
+		body: 'Lorem ipsum doler it ola ola',
+		date: 'March 9, 2021',
+	},
+	{
+		id: 6,
+		title: 'Meeting 1',
+		agenda: 'Agenda',
+		body: 'Lorem ipsum doler it ola ola',
+		date: 'March 9, 2021',
+	},
 ]
 const Log = () => {
 	const [loading, setLoading] = useState(true)
@@ -54,7 +68,7 @@ const Log = () => {
 			<Hidden smDown>
 				<Sidebar />
 			</Hidden>
-			<Container maxWidth="md" className={styles.container}>
+			<Container maxWidth="lg" className={styles.container}>
 				<Box
 					alignItems="center"
 					display="flex"
